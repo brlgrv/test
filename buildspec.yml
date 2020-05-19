@@ -13,7 +13,7 @@ phases:
       - REPOSITORY_URI=$ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/sud-staging-backend
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       #      - IMAGE_TAG=${COMMIT_HASH:=latest}
-      - IMAGE_TAG=main
+      - IMAGE_TAG=mai
   build:
     commands:
       - echo Build started on `date`
